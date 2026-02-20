@@ -1,0 +1,307 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="925.2,3626.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="534.4,3603.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="DepartureCity" />
+        <Variable x:TypeArguments="x:String" Name="DestinationCity" />
+        <Variable x:TypeArguments="x:String" Name="DepartureDate" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="500.8,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Departure City" Title="Details">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[DepartureCity]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="500.8,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter Destination City" Title="Details">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[DestinationCity]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="500.8,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter Departure Date" Title="Details">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[DepartureDate]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="500.8,2699.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="3cfa54d6-231b-4499-92f1-9617fe0e9a18">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,2459.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="AirlineName" />
+                <Variable x:TypeArguments="x:String" Name="FightPrice" />
+                <Variable x:TypeArguments="x:String" Name="DepartureTime" />
+                <Variable x:TypeArguments="x:String" Name="ArrivalTime" />
+                <Variable x:TypeArguments="x:String" Name="emailBody" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Leaving from'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" Text="[DepartureCity]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in" CVScreenId="da36bd03-487e-4aaf-9cdc-fa00c95de341" ContentHash="VN94IdRfhUCP5Hza82IeRA" CvElementArea="239, 530, 351, 64" CvType="InputBox" DesignTimeRectangle="240, 532, 350, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Leaving from' tag='BUTTON' type='button' class='uitk-fake-input uitk-form-field-trigger uitk-field-fake-input uitk-field-fake-input-hasicon' aaname='' /&gt;" Guid="05a86317-51a5-465a-a3df-b2d8f96a8187" InformativeScreenshot="d7688bbff700f990f4f7a40dd6ae6a12.png" Reference="gkfyoW27_0WsHV71ynlPeA/-B6Frk7mP0ealOVihHA1ug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp;amp; Airfares' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="da36bd03-487e-4aaf-9cdc-fa00c95de341" CvElementArea="239, 530, 351, 64" CvType="InputBox" DesignTimeRectangle="295, 550, 117, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uitk-field-label' aaname='Leaving from' check:innerText='Leaving from' /&gt;" Guid="5bc99b1b-9117-44cb-b95c-06b23d606259" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in" ContentHash="HkZLsJoia0SswouZcC35sA" DesignTimeRectangle="240, 637, 470, 78" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Chennai (MAA - Chennai Intl.) India' tag='BUTTON' type='button' class='uitk-action-list-item-link' aaname='' /&gt;" Guid="4ede1ba7-4c9b-49b2-89d2-4c06019e2277" InformativeScreenshot="7876da9d269239a829fcd55b09a4cc25.png" Reference="gkfyoW27_0WsHV71ynlPeA/wVXUXpefP0eAAHyIiOSaDA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp;amp; Airfares' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Going to'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" Text="[DestinationCity]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in" CVScreenId="04d06d34-b0a5-4def-9a50-90d52e385c4e" ContentHash="5QsBNLcO1U6f6llRfWCmMg" CvElementArea="609, 449, 353, 64" CvType="InputBox" DesignTimeRectangle="609, 451, 350, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Going to' tag='BUTTON' type='button' class='uitk-fake-input uitk-form-field-trigger uitk-field-fake-input uitk-field-fake-input-hasicon' aaname='' /&gt;" Guid="c8f6283c-9fbc-4870-9bc0-44d4fd9ae9f6" InformativeScreenshot="9f6bf01639227ff0446cae77db5b8aef.png" Reference="gkfyoW27_0WsHV71ynlPeA/H7DVeny7DEWoSTOBpCqOEg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp;amp; Airfares' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="04d06d34-b0a5-4def-9a50-90d52e385c4e" CvElementArea="609, 449, 353, 64" CvType="InputBox" DesignTimeRectangle="665, 468, 80, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Going to' tag='LABEL' type='' class='uitk-field-label' check:innerText='Going to' /&gt;" Guid="ba03909e-1306-4bdd-8abb-5277187693f1" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in" ContentHash="hsWg8-s0EkuZri3as_o6KQ" DesignTimeRectangle="609, 556, 470, 79" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Delhi (DEL - Indira Gandhi Intl.) India' tag='BUTTON' type='button' class='uitk-action-list-item-link' aaname='' /&gt;" Guid="606cba85-0680-4853-97ce-2b2dc7bf5cce" InformativeScreenshot="1af561126aad5d55dd5236d59faf01a5.png" Reference="gkfyoW27_0WsHV71ynlPeA/Tdnmwn1Q0UOcEMS6dkOV3w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp;amp; Airfares' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apr 7 - Apr 14'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in" CVScreenId="4486617b-d249-4517-87d7-88e1fc9c4673" ContentHash="eOB4S2RkoE6tD3W1OGW4ww" CvElementArea="1574, 531, 108, 64" CvTextArea="1596, 552, 63, 18" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1578, 532, 102, 60" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='search_button' tag='BUTTON' type='submit' class='uitk-button uitk-button-large uitk-button-has-text uitk-button-primary' aaname='Search' check:innerText='Search' /&gt;" Guid="e87ccbe5-cfaa-46c2-8f39-768012ef3ea8" InformativeScreenshot="55812445e1510e808a3c90b582e9b261.png" Reference="gkfyoW27_0WsHV71ynlPeA/k0_ib5cwzEO1eotJsiYpAw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp;amp; Airfares' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Any Word Group'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" TextString="[AirlineName]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in/Flights-Search" CVScreenId="1695049a-dd6e-4c8d-9f17-a025febf7bad" ContentHash="su0DnuOF7kiJam9I48ay-w" CvTextArea="600, 644, 59, 15" CvTextArgument="Air India" CvType="Text" DesignTimeRectangle="600, 644, 59, 15" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="9379f6f0-25a0-41e4-9cd6-0eff81ded62b" InformativeScreenshot="371fbb9e5610512a687ef5aa3371ce82.png" Reference="gkfyoW27_0WsHV71ynlPeA/esMNbFZ1QEGUr066PRuKow" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MAA to DEL flights' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text 'Any Word Group(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" TextString="[FightPrice]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in/Flights-Search" CVScreenId="1695049a-dd6e-4c8d-9f17-a025febf7bad" ContentHash="kDXw0fEXAUiWm77vtzVVTQ" CvTextArea="1379, 595, 86, 25" CvTextArgument="₹11,403" CvType="Text" DesignTimeRectangle="1379, 595, 86, 25" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="fdf3d5f6-dfc0-4cf7-8aa6-bbe70ad149e5" InformativeScreenshot="d5661148545f5b9f6a07626faffc436d.png" Reference="gkfyoW27_0WsHV71ynlPeA/k6c2E6ukMUSOFZAdfIs2Sg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MAA to DEL flights' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text 'Any Word Group(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" TextString="[DepartureTime]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in/Flights-Search" CVScreenId="1695049a-dd6e-4c8d-9f17-a025febf7bad" ContentHash="CM30oTqnqkSip7PLYEs9-Q" CvTextArea="600, 595, 57, 17" CvTextArgument="08:05" CvType="Text" DesignTimeRectangle="600, 595, 57, 17" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="d77440f2-659e-4c7d-ab81-efaed079776f" InformativeScreenshot="914f7a9327c08858f7f31775d1de14d0.png" Reference="gkfyoW27_0WsHV71ynlPeA/_rdN6piTH0WCp5A0VfjU8w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MAA to DEL flights' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text 'Any Word Group(3)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="3cfa54d6-231b-4499-92f1-9617fe0e9a18" TextString="[ArrivalTime]" Version="V4">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="expedia.co.in/Flights-Search" CVScreenId="1695049a-dd6e-4c8d-9f17-a025febf7bad" ContentHash="HI_zCsrk7U-Jg5sexbUI8w" CvTextArea="789, 595, 53, 17" CvTextArgument="10:50" CvType="Text" DesignTimeRectangle="789, 595, 53, 17" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="3e02444f-3b36-459c-aa2d-73e972936c36" InformativeScreenshot="34c108e6cd50ec7d78017cc35f42ae01.png" Reference="gkfyoW27_0WsHV71ynlPeA/LxQsH9pYQE6tjxt2AhXGyg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MAA to DEL flights' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[emailBody]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">["Flight from " &amp; DepartureCity &amp; " to " &amp; DestinationCity &amp; vbCrLf &amp; "Departure date: " &amp; DepartureDate &amp; vbCrLf &amp; "Flight Price: " &amp; FightPrice &amp; vbCrLf &amp; "Airline: " &amp; AirlineName]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" Body="&quot;Flight from Chennai to delhi  , Departure date: 7-4-25 , Flight Price: 13,344 , Airline: Indigo&quot;" DisplayName="Send SMTP Email" Email="maryasitha@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="433.6,275.2" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="Expedia" Password="tamfbpimihqqcpoy" Port="587" Result="[emailBody]" SecureConnection="StartTlsWhenAvailable" Server="smtp.gmail.com" Subject="Your Flight Booking Details." To="maryasitha559@gmail.com" UseISConnection="False">
+                <ui:SendMail.AttachmentsBackup>
+                  <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </ui:SendMail.AttachmentsBackup>
+                <ui:SendMail.ConnectionDetailsBackupSlot>
+                  <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
+                        <x:Null />
+                      </scg:List>
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </ui:SendMail.ConnectionDetailsBackupSlot>
+                <ui:SendMail.Files>
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                </ui:SendMail.Files>
+              </ui:SendMail>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="FhH_T8wICkq7-GJCXQbVmQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGrSURBVDhPpZNPLwNBGMZ9ApEQjX83tCWtZGZTZvZSQv05CJfGiZsv4Atw5ivwAXr1L5EgJD3SViNRiwMHIpJWCEG2j7xv2+1WWBKHJ7Mz7z6/eXb2nTrbEvW2JZZsS9zblsAfRe+Sp76u/PBaKeLSW8ULB0KeRQLc0ULREnjPCeR2JdJbBjLfiNavk9Kd5JYARZq8nwmsLkcQCmt0+k10BarqDmoEejSP4zGFm6QESklsAnC0o3UD8WmF0WGFsZGqJkYVwn0avg4TvnYT/qDGybbBHtqcAaSXU4FCWuIxIxw9ZwUOEwa00mhuMxkS6P0BwOdwURWuBFKbBoaiCk2tJkNCfRr+Hg+A+08cbxgYjCo0tpgMOUgY/P10Jp4A2t1tppGSPGUFn4kngMxvZwJzMwNoaC6ZCUafU8j8AvjICeRTEg9HEosL/Qxhc7l5PAE0sfYlJicU5mcHGEJJKl1XAcSGS7/0fE/WAIo0Od0xIKRmCCVxtSw/59MS8SmFtZUIpy3XuJG4lakPCEJJXC84ojo1GyerrnMrO5epcmG+mp0ktTXyLBHgX9f5E+aOqcgzaIRJAAAAAElFTkSuQmCC" InformativeScreenshot="666adaff421daa5aeae70a5991c6376d.jpg" Reference="gkfyoW27_0WsHV71ynlPeA/mqLdmJBtHUak1fMBacgx9w" Selector="&lt;html app='chrome.exe' title='Expedia Travel: Vacations, Cheap Flights, Airline Tickets &amp;amp; Airfares' /&gt;" Url="https://www.expedia.co.in/?currency=INR&amp;siteid=27" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
