@@ -13,12 +13,18 @@ and extracts booking details into Excel automatically.
 - Booking confirmation handling
 - Data extraction to Excel
 - Exception handling and logging
+- Improved workflow organisation
 
 ## 🛠 Tools & Technologies
 - UiPath Studio (Modern Design Experience)
 - Web Automation
 - Excel Automation
 - Selectors & UI Explorer
+
+## ▶️ How to Run
+1. Open project in UiPath Studio
+2. Configure input Excel file
+3. Run Main.xaml
 
 ## 📂 Project Structure
 - **Main.xaml** – Controls overall workflow
